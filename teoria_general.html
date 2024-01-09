@@ -1,0 +1,310 @@
+<!--
+TEORIA DOCUMENTADA HTML
+
+para abrir lo que se ha hecho en el explorador, doy clic derecho al entorno y le doy en open with live server
+
+UTILIDADES DE <META> //todo esto va dentro de HEAD
+
+    HEAD: es lo que va a leer el navegador y los robots de busqueda
+    <meta name="author" content="Didier Rafael">
+    <meta name="description" content="descripcion del contenido de la pagina web">
+    <meta name="keywords" content="tutorial, desarrollo web, tecnologia"> //posicionamiento CEO con palabras clave
+    <meta http-equiv="refresh" content="5; http://www.instagram.com"> // se usa para que una pagina haga una tarea especifica y despues de 5 seg redireccione a otra pagina
+    <link rel="stylesheet" href="style.css"> //para conectar la pagina con los estilos de css
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> //para colocar icono miniatura en la parte de la ventana superior del titulo de la pagina
+    EXCEPCION JAVASCRIPT PORQUE VA DENTRO DEL BODY AL FINAL
+    <script src="index.js"></script>
+
+ETIQUETAS BODY
+    <p></p> etiqueta para parrafos 
+    <p class="parrafo"> aqui va el texto <b> en negrita </b></p> de esta manera se usa la etiqueta para resaltar algo en negrita
+    <i> cursiva </i> etiqueta para una palabra en cursiva
+    <strong></strong> etiqueta de negrita se usa sobre b ya que es a nivel semantico
+    <em></em> etiqueta cursiva se usa sobre i tambien para fines semanticos
+    <br> significa break y se usa para salto de linea o en otras palabras es un enter esta etiqueta no tiene cierre
+    <hr> tambien es salto de linea pero con una linea de division
+    <pre></pre> hace los saltos de linea pero directamente en el html dandole enter y sale igual en la pagina
+    <h1> titulo principal </h1>
+    <h2> titulo secundario </h2>
+    <h3> otro titulo </h3>
+    <h4> otro titulo </h4>
+    <h5> otro titulo </h5>
+    <h6> otro titulo </h6>
+    <p><q cite="https://sitio web"> frase citada de algun autor </q> nombre autor </p>  // de esta manera se cita
+        una frase de un autor y cite que es para incluir el sitio donde se saco ayuda mucho en el CEO
+    <p> en ingles, las frase necesito comer es: <q lange="en"> i need eat </q></p>  // de esta forma se va a resaltar
+        distinto y entre comillas la palabra en ingles o en otro idioma
+    <p>X<sup>2</sup></p>  // etiqueta para elevar al cuadrado
+    <p> Agua es: H<sub>2</sub>O </p>  // etiqueta subindice
+    <p> Desde la tierra a la luna hay 384.400 <abbr title="Kilómetros">Kms</abbr></p>
+    <p> significados de acrónimos colocando el mouse <acronym title="Organización mundial de la salud">OMS</acronym></p>
+
+    ETIQUETAS ENLACES
+    <a href="https://sitio web">Haz clic en el enlace</a>  // este es sencillo osea que abandona la pagina
+    <a href="https://sitio web" target="_blank">Haz clic en el enlace</a>  // abre la web en otra pagina
+    <a href="mailto:drdtabares@gmail.com">Enviar email al interno</a>  // abre el enlace del emaildirecto
+    <a href="tel:+513207212578">Llamar a la línea directa</a>
+
+    ETIQUETAS MULTIMEDIA IMAGENES
+    <img src="/images/img/icono.jpg" alt="Imagen de avión despegando">  //agragar imagen a una pagina
+    <a href="https://sitio web" target="_blank">Haz clic en la imagen
+        <img src="/images/img/icono.jpg" alt="Imagen de avión despegando">
+    </a>  //imagen como enlace a otra pagina, muy usada en los iconos que llevan a las redes sociales
+
+    ETIQUETAS MULTIMEDIA VIDEO
+    <video src="/images/video/Actividad_Foro.mp4"></video> //solo aparece la imagen del video en la pantalla
+    <video src="/images/video/Video de funcionamiento del proyecto.mp4" autoplay></video>  //se reproduce en loop infinito
+    <video src="/images/video/Video de funcionamiento del proyecto.mp4" autoplay muted></video>  //se reproduce en loop infinito sin sonido
+    <video src="/images/video/Video de funcionamiento del proyecto.mp4" controls autoplay muted></video>  //controles de comando de video
+    OTRO FORMATO DE PROGRAMAR VIDEO
+    <video controls autoplay poster="/images/img/icono.jpg">
+        <source src="/images/video/Video de funcionamiento del proyecto.mp4" type="video/mp4">
+        <p>formato no compatible con el navegador descarga el video aqui <a href="/images/video/Video de funcionamiento del proyecto.mp4"></p>
+    </video> 
+    
+    ETIQUETAS MULTIMEDIA AUDIO
+    <audio src="/images/audio/sonido.mp3" controls></audio>
+    <audio src="/images/audio/sonido.mp3" controls muted></audio>
+    OTRO FORMATO DE PROGRAMAR AUDIO
+    <video controls poster="/images/img/icono.jpg">
+        <source src="/images/audio/sonido.mp3" type="audio/mp3">
+        <p>formato no compatible con el navegador descarga el video aqui <a href="/images/audio/sonido.mp3"></p>
+    </video>
+
+    LISTAS DESORDENADA O VIÑETADA
+    <ul>
+        <li>Leche</li>
+        <li>Arroz</li>
+        <li>Panel</li>
+        <li>Huevos</li>
+    </ul>
+    LISTAS ORDENADAS O NUMERADAS
+    <ol>
+        <li>Bañarse</li>
+        <li>Hacer el desayuno con los siguientes ingredientes:
+            <ul>
+                <li>Leche</li>
+                <li>Arroz</li>
+                <li>Panel</li>
+                <li>Huevos</li>
+            </ul>
+        </li>
+        <li>Estudiar</li>
+        <li>Ir a trabajar</li>
+    </ol>
+    LISTA CONDICIONADA 
+    <ol start="5"> // empieza desde el numero 5
+        <li></li>
+    </ol>
+    <ol type="a"></ol>  //esta lista se hará con letras y aparecen otras formas como mayusculas o numeros romanos
+    <ol reversed></ol>  // empezara en orden descendente
+
+    TABLAS
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 1px solid;
+            }
+            td {
+                border: 1px solid;
+                padding: 10px;
+            }
+        </style>
+
+    </head>
+    <body>
+    
+        <h1>Registro de alumnos</h1>
+        <hr>
+        <table>
+            <tr>
+                <th>&nbsp;</th>  //codigo de campo vacío
+                <th>Maritza</th>  //los th son para estilizar los titulos por aparte
+                <th>Didier</th>
+                <th>Marina</th>
+                <th>sssss</th>
+            </tr>
+            <tr>
+                <th>Edad</th>
+                <td>26</td>
+                <td>33</td>
+                <td>64</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <th>Documento</th>
+                <td>*****</td>
+                <td>*****</td>
+                <td>*****</td>
+                <td>*****</td>
+            </tr>
+        </table>
+
+    AGRUPADORES
+    <div>
+        <p>
+            Div es un agrupador que ocupa todo el ancho del elemento, osea que 
+            si es una imagen o un texto, me va a ocupar todo el ancho de la fila 
+            en la que se encuentra.
+        </p>
+    </div>
+    <span>
+        <strong>Esto ocupa solamente el espacio de la letra y no todo el bloque como el div</strong>
+    </span>
+    
+    IFRAME
+    Es una etiqueta que se utiliza para agregar contenido de terceros, por ejemplo videos de youtube
+    normalmente se coloca cuando le doy en el boton de compartir en youtube y me muestra las opciones de desarrollador 
+    le doy copiar al iframe y lo pego en el body
+    Ejemplo
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bNV6iw13Rnk?si=PbVwAbUu_FAYTkIj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    MAPA
+    con el iframe tambien se puede insertar una pagina anidad de google o un mapa de google maps 
+    siempre dandole en compartir y copiando el enlace de iframe
+
+    FORMULARIOS
+    NOTA: todas las validaciones de contraeñas y correos se deben hacer en el javascript o en el framework debido a los problemas de seguridad 'hacking'
+    Ejemplos para la creación de formularios
+    <form action="envio.php" method="POST" target="_blank">  //lo que acompaña a form es lo que se utiliza para enviar a bases de datos
+        <label for="usuario">Usuario: </label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingrese su nombre" required>  // required es campo obligatorio required es facilmente hackeable desde f12 de la pagina y se borra el required
+        <br>
+        <label for="email">Usuario: </label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>   // tambien es hackeable debido a que se puede borrar desde f12 el type email
+        <br>
+        <label for="password">Contraseña: </label>
+        <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" maxlength="16" minlength="8" required>
+        <br>
+        <label for="programando">Años programando: </label>
+        <input type="number" id="programando" name="programando" placeholder="Años programando" max="5" min="0">
+        <br>
+        <label for="archivo">Subir CV: </label>
+        <input type="file" id="archivo" name="archivo" value="Cargar archivo" multiple>   //multiple es para subir varios archivos
+        <br>
+        <label for="fecha">Fecha de nacimiento: </label>
+        <input type="date" id="fecha" name="fecha">
+        <br>
+        <input type="checkbox" name="lenguajes" value="HTML">HTML
+        <input type="checkbox" name="lenguajes" value="CSS">CSS
+        <input type="checkbox" name="lenguajes" value="JAVASCRIPT">JAVASCRIPT
+        <input type="checkbox" name="lenguajes" value="REACT">REACT
+        <br>
+        <input type="radio" name="lenguajes" value="HTML">HTML
+        <input type="radio" name="lenguajes" value="CSS">CSS
+        <input type="radio" name="lenguajes" value="JAVASCRIPT">JAVASCRIPT
+        <input type="radio" name="lenguajes" value="REACT">REACT
+        <br>
+        <label for="opinión">Deja tu comentario: </label>
+        <textarea id="opinión" name="opinión" placeholder="Deja tu comentario" rows="10" cols="50"></textarea>
+        <br>
+        <label for="pais">País de origen: </label>
+        <select name="pais" name="pais">
+            <optgroup label="América">
+                <option value="Mexico">Mexico</option>
+                <option value="Colombia" selected >Colombia</option>   // el selected es para que salga por defecto el pais del usuario eso depende de la region
+                <option value="Brasil">brasil</option>
+                <option value="Perú">Perú</option>
+                <option value="Argentina">Argentina</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="Francia">Francia</option>
+                <option value="España">España</option>
+                <option value="Portugal">Portugal</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Borrar datos">
+        <br>
+        <button onclick="alert('Alerta de coockies!')">Click!</button>
+    </form>
+
+SVG
+Es un formato de imagen que ocupa pocos recursos y nunca se pixela porque esta basado en vectores
+EJEMPLO
+-Buscar en svgicons en ggogle y le doy en repo
+-selecciono el icono que quiera
+-le doy clic en edit vector
+-le doy clic en copy svg
+-pego el codigo en mi pagina
+-ejemplo de un svg:
+<svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 960c-92.8 0-160-200-160-448S419.2 64 512 64s160 200 160 448-67.2 448-160 448z m0-32c65.6 0 128-185.6 128-416S577.6 96 512 96s-128 185.6-128 416 62.4 416 128 416z" fill="#050D42"></path><path d="M124.8 736c-48-80 92.8-238.4 307.2-363.2S852.8 208 899.2 288 806.4 526.4 592 651.2 171.2 816 124.8 736z m27.2-16c33.6 57.6 225.6 17.6 424-97.6S905.6 361.6 872 304 646.4 286.4 448 401.6 118.4 662.4 152 720z" fill="#050D42"></path><path d="M899.2 736c-46.4 80-254.4 38.4-467.2-84.8S76.8 368 124.8 288s254.4-38.4 467.2 84.8S947.2 656 899.2 736z m-27.2-16c33.6-57.6-97.6-203.2-296-318.4S184 246.4 152 304 249.6 507.2 448 622.4s392 155.2 424 97.6z" fill="#050D42"></path><path d="M512 592c-44.8 0-80-35.2-80-80s35.2-80 80-80 80 35.2 80 80-35.2 80-80 80zM272 312c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48zM416 880c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z m448-432c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z" fill="#2F4BFF"></path></g></svg>
+
+ATAJOS DE TECLADO
+alt+shift+f // para identacion automatica de cualquier elemento
+alt+shift+flecha abajo // para copiar la linea abajo
+alt+shift+clic  //  para hacer multicursor y copiar al mismo tiempo en varias lineas de codigo
+alt sostenido  //  para colocar multiples cursores pero en cualquier parte del texto
+control sostenido+tecla cierre de llave  //selecciona una parte del codigo y se le aplica el comando para comentar automaticamente
+
+
+ESTRUCTURA SEMANTICA DE UNA PAGINA WEB
+
+<!DOCTYPE html>           
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La aviación</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/icono.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <section>
+        <article>
+
+        </article>
+        <article>
+
+        </article>
+    </section>
+
+    <aside>
+
+    </aside>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
+
+
+SUBIR REPOSITORIO A GITHUB
+
+-ingreso a mi github y le doy en nuevo repositorio
+-coloco el nombre del repositorio
+-crear uevo repositorio
+-En la carpeta del proyecto le doy en vista, lista
+-luego manteniendo apretado shift le doy clic derecho y en abrir la ventana de powershell aqui
+PASOS A SEGUIR EN GIT
+-git config --global user.name "Didier"
+-git config --global user.email drtabares@poligran.edu.co
+-git init
+-git add.
+-git commit -am "cualquier comentario"
+-git remove add origin // esta linea se copia completa desde la ventana de pasos que me brinda github cuando creo el nuevo repositorio
+-git push origin master
+
+
+live server es el servidor en linea que me muestra en tiempo real lo que estoy haciendo en la pagina web, 
+es una extension descargable para visual estudio.
+
+dentro de head es posible estilizar la pagina con la etiqueta <style></style>
+o dentro de body se puede estilizar cada etiqueta por ejemplo <p style="background: #000;">texto_random</p>
+pero la idea es hacer un archivo aparte de css para estilizar el cuerpo del html.
+
+
+-->
